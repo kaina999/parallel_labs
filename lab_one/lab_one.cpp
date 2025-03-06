@@ -68,9 +68,9 @@ int main(int argc, char* argv[])
             }
         }
 
-    cout << endl << "Calculation time: " << double(clock() - start) / CLOCKS_PER_SEC << " seconds" << endl;
-
     matrixOutput<float>(C, N, "resulting C");
+
+    cout << endl << "Calculation time: " << double(clock() - start) / CLOCKS_PER_SEC << " seconds" << endl;
 
     // free memory
     delete[] A;
